@@ -80,6 +80,11 @@ class DiceNotationIntegrationTest {
     }
 
 
+    @Test
+    fun prettyPrint() {
+        val result = FakeTower().roll("4d6KH3")
+        assertEquals("9:[2, 3, 4] dropped:[1]", result.prettyPrint())
+    }
 
 }
 

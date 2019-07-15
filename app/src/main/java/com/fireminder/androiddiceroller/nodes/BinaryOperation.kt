@@ -7,6 +7,14 @@ class BinaryOperation(
     private val operator: Operator,
     private val left: AstNode,
     private val right: AstNode) : AstNode() {
+    override fun prettyPrint(): String {
+        val sign = when(operator) {
+            Operator.ADDITION -> "+"
+            Operator.SUBTRACTION -> "-"
+            else -> TODO()
+        }
+        return "${left.prettyPrint()}$sign${right.prettyPrint()}"
+    }
 
     override fun accept(visitor: AstVisitor) {
         visitor.visitBinaryOperationNode(this)

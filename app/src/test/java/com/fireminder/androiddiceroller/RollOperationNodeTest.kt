@@ -31,5 +31,13 @@ class RollOperationNodeTest {
         assertEquals("1d2", rollOperationNode.expression())
     }
 
+    @Test
+    fun prettyPrint() {
+        val rollOperationNode = RollOperationNode(3, 2)
+        rollOperationNode.addRoll(1)
+        rollOperationNode.addRoll(2)
+        rollOperationNode.addRoll(1)
+        assertEquals("[1, 2, 1]", rollOperationNode.prettyPrint())
+    }
 
 }

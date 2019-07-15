@@ -16,4 +16,6 @@ abstract class AstNode {
         this.result = result
     }
 
+    abstract fun prettyPrint(): String
+
 }

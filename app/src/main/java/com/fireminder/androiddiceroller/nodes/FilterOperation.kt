@@ -9,6 +9,10 @@ class FilterOperation(
     private val filterOperator: Operator,
     private val filterArgument: NumberNode) : AstNode() {
 
+    override fun prettyPrint(): String {
+        return "$keptRolls dropped:$droppedRolls"
+    }
+
     private lateinit var keptRolls: List<Int>
     private lateinit var droppedRolls: List<Int>
 

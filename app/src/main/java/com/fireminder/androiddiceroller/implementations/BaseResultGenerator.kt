@@ -10,7 +10,7 @@ import com.fireminder.androiddiceroller.nodes.FilterOperation
 class BaseResultGenerator : ResultGenerator {
     override fun create(astNode: AstNode): Result {
         if (astNode is RollOperationNode) {
-            return BaseResult(astNode.rolls().sum(), astNode.expression())
+            return BaseResult(astNode, astNode.rolls().sum(), astNode.expression())
         }
         if (astNode is BinaryOperation) {
             return astNode.result()

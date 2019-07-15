@@ -6,6 +6,10 @@ import com.fireminder.androiddiceroller.interfaces.DieRollHolder
 import com.fireminder.androiddiceroller.interfaces.Result
 
 class RollOperationNode(private val numberOfRolls: Int, private val dieSides: Int): AstNode(), DieRollHolder {
+    override fun prettyPrint(): String {
+        return rolls().toString()
+    }
+
     private val results: MutableList<Int> = mutableListOf()
 
     override fun hasRolls(): Boolean {

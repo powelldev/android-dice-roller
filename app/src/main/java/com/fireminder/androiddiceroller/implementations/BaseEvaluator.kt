@@ -19,7 +19,7 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
                     rolls.removeAt(rolls.indexOf(rolls.max()!!))
                 }
                 filterOperation.setRolls(keptRolls, rolls)
-                filterOperation.setResult(BaseResult(keptRolls.sum(), ""))
+                filterOperation.setResult(BaseResult(filterOperation, keptRolls.sum(), ""))
             }
             Operator.KEEP_LOWEST -> {
                 val rolls = filterOperation.rollOperation().rolls().toMutableList()
@@ -29,7 +29,7 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
                     rolls.removeAt(rolls.indexOf(rolls.min()!!))
                 }
                 filterOperation.setRolls(keptRolls, rolls)
-                filterOperation.setResult(BaseResult(keptRolls.sum(), ""))
+                filterOperation.setResult(BaseResult(filterOperation, keptRolls.sum(), ""))
             }
             Operator.DROP_HIGHEST -> {
                 val rolls = filterOperation.rollOperation().rolls().toMutableList()
@@ -39,7 +39,7 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
                     rolls.removeAt(rolls.indexOf(rolls.max()!!))
                 }
                 filterOperation.setRolls(rolls, droppedRolls)
-                filterOperation.setResult(BaseResult(rolls.sum(), ""))
+                filterOperation.setResult(BaseResult(filterOperation, rolls.sum(), ""))
             }
             Operator.DROP_LOWEST -> {
                 val rolls = filterOperation.rollOperation().rolls().toMutableList()
@@ -49,14 +49,14 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
                     rolls.removeAt(rolls.indexOf(rolls.min()!!))
                 }
                 filterOperation.setRolls(rolls, droppedRolls)
-                filterOperation.setResult(BaseResult(rolls.sum(), ""))
+                filterOperation.setResult(BaseResult(filterOperation, rolls.sum(), ""))
             }
             else -> TODO()
         }
     }
 
     override fun visitNumberNode(node: NumberNode) {
-        node.setResult(BaseResult(node.number, node.number.toString()))
+        node.setResult(BaseResult(node, node.number, node.number.toString()))
     }
 
     override fun visitBinaryOperationNode(binaryOperation: BinaryOperation) {
@@ -65,8 +65,8 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
         val leftValue = binaryOperation.left().result().score()
         val rightValue = binaryOperation.right().result().score()
         when (binaryOperation.operator()) {
-            Operator.ADDITION -> binaryOperation.setResult(BaseResult(leftValue + rightValue, ""))
-            Operator.SUBTRACTION -> binaryOperation.setResult(BaseResult(leftValue - rightValue, ""))
+            Operator.ADDITION -> binaryOperation.setResult(BaseResult(binaryOperation, leftValue + rightValue, ""))
+            Operator.SUBTRACTION -> binaryOperation.setResult(BaseResult(binaryOperation, leftValue - rightValue, ""))
         }
     }
 
@@ -76,7 +76,7 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
                 rng.next(1, rollOperationNode.dieSides()))
         }
 
-        rollOperationNode.setResult(BaseResult(rollOperationNode.rolls().sum(), rollOperationNode.expression()))
+        rollOperationNode.setResult(BaseResult(rollOperationNode, rollOperationNode.rolls().sum(), rollOperationNode.expression()))
     }
 
     override fun evaluate(astNode: AstNode) {
