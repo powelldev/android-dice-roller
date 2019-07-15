@@ -1,9 +1,6 @@
 package com.fireminder.androiddiceroller.implementations
 
-import com.fireminder.androiddiceroller.nodes.BinaryOperation
-import com.fireminder.androiddiceroller.nodes.NumberNode
-import com.fireminder.androiddiceroller.nodes.Operator
-import com.fireminder.androiddiceroller.nodes.RollOperationNode
+import com.fireminder.androiddiceroller.nodes.*
 import org.junit.Assert.*
 import org.junit.Test
 
@@ -54,6 +51,42 @@ class BaseParserTest {
         assertEquals(1, (node.left() as NumberNode).number)
         assertEquals(2, (node.right() as NumberNode).number)
         assertEquals(Operator.SUBTRACTION, node.operator())
+    }
+
+    @Test
+    fun filterKeepHighest() {
+        val node = BaseParser().parse("4d6KH3") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_HIGHEST, node.filterOperator())
+        assertEquals(3, (node.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun filterKeepLowest() {
+        val node = BaseParser().parse("4d6KL2") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_LOWEST, node.filterOperator())
+        assertEquals(2, (node.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun filterDropHighest() {
+        val node = BaseParser().parse("4d6DH1") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.DROP_HIGHEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun filterDropLowest() {
+        val node = BaseParser().parse("4d6DL1") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.DROP_LOWEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
     }
 }
 

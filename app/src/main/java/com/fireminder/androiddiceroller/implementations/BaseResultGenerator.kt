@@ -5,6 +5,7 @@ import com.fireminder.androiddiceroller.interfaces.AstNode
 import com.fireminder.androiddiceroller.interfaces.Result
 import com.fireminder.androiddiceroller.interfaces.ResultGenerator
 import com.fireminder.androiddiceroller.nodes.BinaryOperation
+import com.fireminder.androiddiceroller.nodes.FilterOperation
 
 class BaseResultGenerator : ResultGenerator {
     override fun create(astNode: AstNode): Result {
@@ -12,6 +13,9 @@ class BaseResultGenerator : ResultGenerator {
             return BaseResult(astNode.rolls().sum(), astNode.expression())
         }
         if (astNode is BinaryOperation) {
+            return astNode.result()
+        }
+        if (astNode is FilterOperation) {
             return astNode.result()
         }
         TODO()

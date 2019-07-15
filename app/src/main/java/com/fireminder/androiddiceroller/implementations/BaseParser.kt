@@ -2,10 +2,7 @@ package com.fireminder.androiddiceroller.implementations
 
 import com.fireminder.androiddiceroller.interfaces.AstNode
 import com.fireminder.androiddiceroller.interfaces.Parser
-import com.fireminder.androiddiceroller.nodes.BinaryOperation
-import com.fireminder.androiddiceroller.nodes.NumberNode
-import com.fireminder.androiddiceroller.nodes.Operator
-import com.fireminder.androiddiceroller.nodes.RollOperationNode
+import com.fireminder.androiddiceroller.nodes.*
 
 class BaseParser : Parser {
     private var index = 0
@@ -21,10 +18,10 @@ class BaseParser : Parser {
     }
 
     /*
-    addition -> dieOp [(+/-) dieOp]
+    addition -> filterOp [(+/-) filterOp]
      */
     private fun addition(): AstNode {
-        val left = die()
+        val left = filterOp()
         if (hasNext()) {
             val operator  = when (current()) {
                 '+' -> Operator.ADDITION
@@ -32,20 +29,41 @@ class BaseParser : Parser {
                 else -> TODO()
             }
             consume()
-            val right = die()
+            val right = filterOp()
             return BinaryOperation(operator, left, right)
         }
         return left
     }
 
-    /*
-    //dieOp -> die [filterOp]
-    private fun dieOp(): AstNode {
-    }
+    //filterOp -> die [(DL|DH|KH|KL) number]
     private fun filterOp(): AstNode {
+        val die = die()
+        if (hasNext() && peek("DL")) {
+            consume()
+            consume()
+            return FilterOperation(die as RollOperationNode, Operator.DROP_LOWEST, NumberNode(number()))
+        }
 
+        if (hasNext() && peek("DH")) {
+            consume()
+            consume()
+            return FilterOperation(die as RollOperationNode, Operator.DROP_HIGHEST, NumberNode(number()))
+        }
+
+        if (hasNext() && peek("KL")) {
+            consume()
+            consume()
+            return FilterOperation(die as RollOperationNode, Operator.KEEP_LOWEST, NumberNode(number()))
+        }
+
+        if (hasNext() && peek("KH")) {
+            consume()
+            consume()
+            return FilterOperation(die as RollOperationNode, Operator.KEEP_HIGHEST, NumberNode(number()))
+        }
+        return die
     }
-    */
+
     /*
     die -> 'd' number | number 'd' number
      */
@@ -83,6 +101,16 @@ class BaseParser : Parser {
     private fun consume() {
         index++
     }
+
+    private fun peek(expected: String): Boolean {
+        expected.forEachIndexed { expectedIndex, c ->
+            if (expression[index + expectedIndex] != c) {
+                return false
+            }
+        }
+        return true
+    }
+
     private fun expectAndConsume(character: Char) {
         assert(current() == character)
         index++

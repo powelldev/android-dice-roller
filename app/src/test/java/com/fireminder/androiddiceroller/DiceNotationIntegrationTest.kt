@@ -54,6 +54,32 @@ class DiceNotationIntegrationTest {
         assertEquals(1, result.score())
     }
 
+    @Test
+    fun filterKeepHighest() {
+        val result = FakeTower().roll("2d20KH1")
+        assertEquals(2, result.score())
+    }
+
+    @Test
+    fun filterKeepLowest() {
+        val result = FakeTower().roll("2d20KL1")
+        assertEquals(1, result.score())
+    }
+
+
+    @Test
+    fun filterDropLowest() {
+        val result = FakeTower().roll("4d6DL1")
+        assertEquals(2+3+4, result.score())
+    }
+
+    @Test
+    fun filterDropHighest() {
+        val result = FakeTower().roll("2d20DH1")
+        assertEquals(1, result.score())
+    }
+
+
 
 }
 

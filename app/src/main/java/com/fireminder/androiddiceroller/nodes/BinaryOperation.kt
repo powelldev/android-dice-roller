@@ -18,4 +18,10 @@ class BinaryOperation(
 
 }
 
-enum class Operator { ADDITION, SUBTRACTION }
+enum class Operator {
+    ADDITION,
+    SUBTRACTION,
+    KEEP_HIGHEST,
+    KEEP_LOWEST,
+    DROP_HIGHEST,
+    DROP_LOWEST }

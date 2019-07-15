@@ -8,11 +8,11 @@ abstract class AstNode {
 
     private lateinit var result: Result
 
-    fun result(): Result {
+    open fun result(): Result {
         return result
     }
 
-    fun setResult(result: Result) {
+    open fun setResult(result: Result) {
         this.result = result
     }
 

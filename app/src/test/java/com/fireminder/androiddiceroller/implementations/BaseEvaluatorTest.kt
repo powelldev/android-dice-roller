@@ -1,12 +1,10 @@
 package com.fireminder.androiddiceroller.implementations
 
-import com.fireminder.androiddiceroller.nodes.RollOperationNode
 import com.fireminder.androiddiceroller.fakes.FakeRng
-import com.fireminder.androiddiceroller.nodes.BinaryOperation
-import com.fireminder.androiddiceroller.nodes.NumberNode
-import com.fireminder.androiddiceroller.nodes.Operator
+import com.fireminder.androiddiceroller.nodes.*
 import org.junit.Assert.*
 import org.junit.Test
+import java.util.logging.Filter
 
 class BaseEvaluatorTest {
     @Test
@@ -48,5 +46,61 @@ class BaseEvaluatorTest {
         evaluator.evaluate(node)
 
         assertEquals(-1, node.result().score())
+    }
+
+    @Test
+    fun filterKeepHighest() {
+        val evaluator = BaseEvaluator(FakeRng())
+        val rollOp = RollOperationNode(2, 20)
+        val node = FilterOperation(
+            rollOperationNode = rollOp,
+            filterOperator = Operator.KEEP_HIGHEST,
+            filterArgument = NumberNode(1))
+
+        evaluator.evaluate(node)
+
+        assertEquals(2, node.result().score())
+    }
+
+    @Test
+    fun filterKeepLowest() {
+        val evaluator = BaseEvaluator(FakeRng())
+        val rollOp = RollOperationNode(2, 20)
+        val node = FilterOperation(
+            rollOperationNode = rollOp,
+            filterOperator = Operator.KEEP_LOWEST,
+            filterArgument = NumberNode(1))
+
+        evaluator.evaluate(node)
+
+        assertEquals(1, node.result().score())
+    }
+
+    @Test
+    fun filterDropHighest() {
+        val evaluator = BaseEvaluator(FakeRng())
+        val rollOp = RollOperationNode(2, 20)
+        val node = FilterOperation(
+            rollOperationNode = rollOp,
+            filterOperator = Operator.DROP_HIGHEST,
+            filterArgument = NumberNode(1))
+
+        evaluator.evaluate(node)
+
+        assertEquals(1, node.result().score())
+    }
+
+    @Test
+    fun filterDropLowest() {
+        val evaluator = BaseEvaluator(FakeRng())
+        val rollOp = RollOperationNode(2, 20)
+        val node = FilterOperation(
+            rollOperationNode = rollOp,
+            filterOperator = Operator.DROP_LOWEST,
+            filterArgument = NumberNode(1))
+
+        evaluator.evaluate(node)
+
+        assertEquals(2, node.result().score())
     }
 }
