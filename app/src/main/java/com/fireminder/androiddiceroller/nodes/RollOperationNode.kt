@@ -1,11 +1,11 @@
-package com.fireminder.androiddiceroller
+package com.fireminder.androiddiceroller.nodes
 
 import com.fireminder.androiddiceroller.interfaces.AstNode
 import com.fireminder.androiddiceroller.interfaces.AstVisitor
 import com.fireminder.androiddiceroller.interfaces.DieRollHolder
+import com.fireminder.androiddiceroller.interfaces.Result
 
-class RollOperationNode(private val numberOfRolls: Int, private val dieSides: Int): AstNode, DieRollHolder {
-
+class RollOperationNode(private val numberOfRolls: Int, private val dieSides: Int): AstNode(), DieRollHolder {
     private val results: MutableList<Int> = mutableListOf()
 
     override fun hasRolls(): Boolean {
@@ -26,4 +26,9 @@ class RollOperationNode(private val numberOfRolls: Int, private val dieSides: In
 
     fun numberOfRolls(): Int = numberOfRolls
     fun dieSides(): Int = dieSides
+
+    fun expression(): String {
+        return "${numberOfRolls}d${dieSides()}"
+    }
+
 }

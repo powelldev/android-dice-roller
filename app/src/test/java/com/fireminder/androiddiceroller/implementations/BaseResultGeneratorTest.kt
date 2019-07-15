@@ -1,6 +1,6 @@
 package com.fireminder.androiddiceroller.implementations
 
-import com.fireminder.androiddiceroller.RollOperationNode
+import com.fireminder.androiddiceroller.nodes.RollOperationNode
 import org.junit.Assert.*
 import org.junit.Test
 

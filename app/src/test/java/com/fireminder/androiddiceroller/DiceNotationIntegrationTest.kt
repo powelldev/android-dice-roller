@@ -19,6 +19,12 @@ class DiceNotationIntegrationTest {
     }
 
     @Test
+    fun resultContainsCompositeRolls() {
+        val result = FakeTower().roll("4d6")
+        assertEquals("4d6", result.expression())
+    }
+
+    @Test
     fun omittingFirst1BeforeDReturns1() {
         val result = FakeTower().roll("d20")
         assertEquals(1, result.score())
@@ -28,6 +34,24 @@ class DiceNotationIntegrationTest {
     fun advantageRoll_returnsHigherValue() {
         val result = FakeTower().roll("2d20")
         assertEquals(3, result.score())
+    }
+
+    @Test
+    fun scalarAddition() {
+        val result = FakeTower().roll("1+1")
+        assertEquals(2, result.score())
+    }
+
+    @Test
+    fun dieScalarAddition() {
+        val result = FakeTower().roll("2+1d2")
+        assertEquals(3, result.score())
+    }
+
+    @Test
+    fun dieScalarSubtraction() {
+        val result = FakeTower().roll("2-1d2")
+        assertEquals(1, result.score())
     }
 
 
