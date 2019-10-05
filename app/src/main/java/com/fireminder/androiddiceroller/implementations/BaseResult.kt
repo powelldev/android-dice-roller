@@ -2,7 +2,6 @@ package com.fireminder.androiddiceroller.implementations
 
 import com.fireminder.androiddiceroller.interfaces.AstNode
 import com.fireminder.androiddiceroller.interfaces.Result
-import java.lang.AssertionError
 
 class BaseResult(
     private val node: AstNode,
@@ -20,9 +19,4 @@ class BaseResult(
     override fun score(): Int {
         return score
     }
-    // number(2) -> 2
-    // dieOp(2d20)-> [1,2]
-    // filterOp(4d6DL1) -> [2, 3, 4] dropped: [1]
-
-
 }
