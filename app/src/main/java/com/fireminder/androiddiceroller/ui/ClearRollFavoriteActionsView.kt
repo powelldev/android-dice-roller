@@ -5,7 +5,6 @@ import android.content.Intent
 import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.fireminder.androiddiceroller.R
 
 class ClearRollFavoriteActionsView @JvmOverloads constructor(
@@ -41,8 +40,6 @@ class ClearRollFavoriteActionsView @JvmOverloads constructor(
     }
 
     private fun notify(action: DiceBagAction) {
-        LocalBroadcastManager
-            .getInstance(context)
-            .sendBroadcastSync(Intent(action.action))
+        context.sendBroadcast(Intent(action.action))
     }
 }

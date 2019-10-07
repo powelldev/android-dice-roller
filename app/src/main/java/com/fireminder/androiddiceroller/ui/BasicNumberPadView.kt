@@ -6,7 +6,6 @@ import android.content.Intent.EXTRA_KEY_EVENT
 import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.fireminder.androiddiceroller.R
 
 class BasicNumberPadView @JvmOverloads constructor(
@@ -29,12 +28,8 @@ class BasicNumberPadView @JvmOverloads constructor(
     }
 
     private fun notify(string: String) {
-        LocalBroadcastManager
-            .getInstance(context)
-            .sendBroadcastSync(
-                Intent(BaseActivity.ACTION_NUMPAD_KEY_EVENT)
-                    .apply {
-                        putExtra(EXTRA_KEY_EVENT, string)
-                    })
+        context.sendBroadcast(
+          Intent(BaseActivity.ACTION_NUMPAD_KEY_EVENT)
+            .apply { putExtra(EXTRA_KEY_EVENT, string) });
     }
 }

@@ -6,14 +6,12 @@ import android.content.Intent
 import android.content.Intent.EXTRA_KEY_EVENT
 import android.content.IntentFilter
 import android.os.Bundle
-import android.view.KeyEvent
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.fireminder.androiddiceroller.R
 import kotlinx.android.synthetic.main.activity_base.*
 
@@ -39,10 +37,8 @@ class BaseActivity : AppCompatActivity() {
                         ACTION_NUMPAD_KEY_EVENT -> {
                             val string = intent.extras[EXTRA_KEY_EVENT]
                             model.currentInput.value = "${model.currentInput.value}$string"
-                            //formula_text.text = "${formula_text.text}$string"
                         }
                         ClearRollFavoriteActionsView.DiceBagAction.Clear.action -> {
-                            //formula_text.text = ""
                             model.currentInput.value = ""
                         }
                         ClearRollFavoriteActionsView.DiceBagAction.Favorite.action -> {}
@@ -64,14 +60,12 @@ class BaseActivity : AppCompatActivity() {
                 addAction(ClearRollFavoriteActionsView.DiceBagAction.Clear.action)
                 addAction(ClearRollFavoriteActionsView.DiceBagAction.Roll.action)
             }
-
-        LocalBroadcastManager.getInstance(this)
-            .registerReceiver(receiver, filter)
+        registerReceiver(receiver, filter)
     }
 }
 
 class BaseViewModel : ViewModel() {
     val currentInput: MutableLiveData<String> by lazy {
-        MutableLiveData<String>()
+        MutableLiveData<String>("")
     }
 }
