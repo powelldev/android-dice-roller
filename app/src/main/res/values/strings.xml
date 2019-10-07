@@ -1,10 +1,31 @@
 <resources>
     <string name="app_name">Android Dice Roller</string>
+
     <string name="one">1</string>
     <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
     <string name="plus">plus</string>
-    <string name="d20">d20</string>
+    <string name="minus">minus</string>
+
     <string name="favorite">favorite</string>
     <string name="roll">roll</string>
     <string name="clear">clear</string>
+
+    <string name="d100">d100</string>
+    <string name="d20">d20</string>
+    <string name="d12">d12</string>
+    <string name="d10">d10</string>
+    <string name="d8">d8</string>
+    <string name="d6">d6</string>
+    <string name="d4">d4</string>
+    <string name="d3">d3</string>
+    <string name="dN">dN</string>
 </resources>

@@ -8,4 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DiceButton" parent="TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+      <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
 </resources>
