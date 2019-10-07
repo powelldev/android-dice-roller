@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f116298-e49e-4770-bf3a-6c18f02653f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,37 +52,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+            <state relative-caret-position="-268">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="378">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="e#346#360#0" expanded="true" />
                 <element signature="e#398#412#0" expanded="true" />
@@ -99,25 +118,37 @@
                 <element signature="e#1908#1920#0" expanded="true" />
                 <element signature="e#1954#1966#0" expanded="true" />
                 <element signature="e#2145#2157#0" expanded="true" />
+                <element signature="e#2191#2203#0" expanded="true" />
+                <element signature="e#2383#2395#0" expanded="true" />
+                <element signature="e#2429#2441#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/ClearRollFavoriteActionsView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="629">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+        <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+            <state relative-caret-position="578">
+              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/robots/BasicDiceBagRobot.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-183">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -133,16 +164,19 @@
         <option value="$PROJECT_DIR$/../build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/ClearRollFavoriteActionsView.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt" />
+        <option value="$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml" />
       </list>
     </option>
   </component>
@@ -266,6 +300,30 @@
               <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,6 +368,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -343,7 +410,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.BasicDiceBagTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="BasicDiceBagTest.numberPad_worksBasicAddition" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -491,21 +558,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasicDiceBagTest_numberPad_worksBasicAddition - 2019.10.07 at 15h 37m 31s.xml">
-      <configuration name="BasicDiceBagTest.numberPad_worksBasicAddition" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BasicDiceBagTest_numberPad_worksBasicAddition - 2019.10.07 at 15h 37m 38s.xml">
-      <configuration name="BasicDiceBagTest.numberPad_worksBasicAddition" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 38m 04s.xml">
-      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 38m 32s.xml">
-      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 40m 50s.xml">
-      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 42m 31s.xml">
       <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
@@ -515,13 +567,34 @@
     <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 47m 10s.xml">
       <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 56m 51s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 15h 59m 05s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 16h 00m 41s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 16h 01m 38s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 16h 01m 53s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 16h 05m 59s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BasicDiceBagTest - 2019.10.07 at 16h 08m 10s.xml">
+      <configuration name="BasicDiceBagTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2628435" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2628435" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -539,7 +612,7 @@
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.5188383" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info active="true" anchor="right" id="Preview" visible="true" weight="0.23775388" />
+      <window_info anchor="right" id="Preview" visible="true" weight="0.23775388" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -562,23 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/ClearRollFavoriteActionsView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#45#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -593,50 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#45#354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -654,11 +670,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/robots/BasicDiceBagRobot.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="e#346#360#0" expanded="true" />
             <element signature="e#398#412#0" expanded="true" />
@@ -675,7 +728,47 @@
             <element signature="e#1908#1920#0" expanded="true" />
             <element signature="e#1954#1966#0" expanded="true" />
             <element signature="e#2145#2157#0" expanded="true" />
+            <element signature="e#2191#2203#0" expanded="true" />
+            <element signature="e#2383#2395#0" expanded="true" />
+            <element signature="e#2429#2441#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/ClearRollFavoriteActionsView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicDieBagView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BasicNumberPadView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>

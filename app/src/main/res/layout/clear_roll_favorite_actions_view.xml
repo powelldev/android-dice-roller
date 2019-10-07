@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TableRow>
 
     <Button
-            android:id="@+id/clear"
-            android:text="@string/clear"
-            android:contentDescription="@string/clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+      android:id="@+id/clear"
+      style="@style/DiceButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/clear"
+      android:text="@string/clear" />
+
     <Button
-            android:id="@+id/roll"
-            android:text="@string/roll"
-            android:contentDescription="@string/roll"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+      android:id="@+id/roll"
+      style="@style/DiceButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/roll"
+      android:text="@string/roll" />
+
     <Button
-            android:id="@+id/favorite"
-            android:text="@string/favorite"
-            android:contentDescription="@string/favorite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-</LinearLayout>
+      android:id="@+id/favorite"
+      style="@style/DiceButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/favorite"
+      android:text="@string/favorite" />
+  </TableRow>
+</TableLayout>

@@ -35,6 +35,19 @@ class BasicDiceBagTest {
     }
 
     @Test
+    fun diceBag_handlesdN() {
+        val activityScenario = ActivityScenario.launch(BaseActivity::class.java)
+
+        val robot = BasicDiceBagRobotImpl()
+        robot
+          .number(1)
+          .die("dN")
+          .number(7)
+          .checkInputMatches("1d7")
+    }
+
+
+    @Test
     fun clear() {
         val activityScenario = ActivityScenario.launch(BaseActivity::class.java)
 

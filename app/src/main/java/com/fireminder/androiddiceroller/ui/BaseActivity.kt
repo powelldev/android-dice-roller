@@ -26,6 +26,8 @@ class BaseActivity : AppCompatActivity() {
         const val ACTION_NUMPAD_KEY_EVENT = "com.fireminder.androiddiceroller.KEY_ACTION"
     }
 
+    private lateinit var receiver: BroadcastReceiver
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
@@ -36,7 +38,7 @@ class BaseActivity : AppCompatActivity() {
 
         model.currentInput.observe(this, modelObserver)
 
-        val receiver = object : BroadcastReceiver() {
+        receiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context?, intent: Intent?) {
                 if (intent != null && intent.action != null) {
                     when (intent.action!!) {
@@ -69,6 +71,11 @@ class BaseActivity : AppCompatActivity() {
               addAction(ClearRollFavoriteActionsView.DiceBagAction.Roll.action)
           }
         registerReceiver(receiver, filter)
+    }
+
+    override fun onDestroy() {
+        unregisterReceiver(receiver)
+        super.onDestroy()
     }
 
     private fun evaluate(input: String): String {
