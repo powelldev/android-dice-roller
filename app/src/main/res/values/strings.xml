@@ -28,4 +28,19 @@
     <string name="d4">d4</string>
     <string name="d3">d3</string>
     <string name="dN">dN</string>
+  <string name="d2">d2</string>
+    <string name="dF">dF</string>
+    <string name="keep">keep</string>
+    <string name="keepHigh">keepHigh</string>
+  <string name="dropHigh">dropHigh</string>
+    <string name="reroll">reroll</string>
+    <string name="penetrate">penetrate</string>
+    <string name="greaterThan"><![CDATA[>]]></string>
+    <string name="lessThan"><![CDATA[<]]></string>
+  <string name="keepLow">keepLow</string>
+  <string name="dropLow">dropLow</string>
+  <string name="rerollOnce">rerollOnce</string>
+  <string name="explode">explode</string>
+  <string name="countFailures">f</string>
+  <string name="compound">compound</string>
 </resources>

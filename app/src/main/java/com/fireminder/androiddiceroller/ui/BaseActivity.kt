@@ -6,12 +6,16 @@ import android.content.Intent
 import android.content.Intent.EXTRA_KEY_EVENT
 import android.content.IntentFilter
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.fireminder.androiddiceroller.R
 import com.fireminder.androiddiceroller.implementations.BaseEvaluator
 import com.fireminder.androiddiceroller.implementations.BaseParser
@@ -26,65 +30,18 @@ class BaseActivity : AppCompatActivity() {
         const val ACTION_NUMPAD_KEY_EVENT = "com.fireminder.androiddiceroller.KEY_ACTION"
     }
 
-    private lateinit var receiver: BroadcastReceiver
+  private lateinit var viewPager: ViewPager
+  private lateinit var adapter: MyPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_base)
-        val model = ViewModelProviders.of(this).get(BaseViewModel::class.java)
-        val modelObserver = Observer<String> { input ->
-            formula_text.text = input
-        }
-
-        model.currentInput.observe(this, modelObserver)
-
-        receiver = object : BroadcastReceiver() {
-            override fun onReceive(context: Context?, intent: Intent?) {
-                if (intent != null && intent.action != null) {
-                    when (intent.action!!) {
-                        ACTION_NUMPAD_KEY_EVENT -> {
-                            val string = intent.extras[EXTRA_KEY_EVENT]
-                            model.currentInput.value = "${model.currentInput.value}$string"
-                        }
-                        ClearRollFavoriteActionsView.DiceBagAction.Clear.action -> {
-                            model.currentInput.value = ""
-                        }
-                        ClearRollFavoriteActionsView.DiceBagAction.Favorite.action -> {
-                        }
-                        ClearRollFavoriteActionsView.DiceBagAction.Roll.action -> {
-                            val dialog = AlertDialog.Builder(this@BaseActivity)
-                              .setTitle("roll result")
-                              .setMessage(evaluate(model.currentInput.value!!))
-                              .create()
-                              .show()
-                        }
-
-                    }
-                }
-            }
-        }
-        val filter = IntentFilter()
-          .apply {
-              addAction(ACTION_NUMPAD_KEY_EVENT)
-              addAction(ClearRollFavoriteActionsView.DiceBagAction.Favorite.action)
-              addAction(ClearRollFavoriteActionsView.DiceBagAction.Clear.action)
-              addAction(ClearRollFavoriteActionsView.DiceBagAction.Roll.action)
-          }
-        registerReceiver(receiver, filter)
+      super.onCreate(savedInstanceState)
+      setContentView(R.layout.activity_base)
+      viewPager = findViewById(R.id.viewPager)
+      adapter = MyPagerAdapter()
+      viewPager.adapter = adapter
     }
-
-    override fun onDestroy() {
-        unregisterReceiver(receiver)
-        super.onDestroy()
-    }
-
-    private fun evaluate(input: String): String {
-        val tower = BaseTower(BaseParser(), BaseEvaluator(RealRng()), RealRng(), BaseResultGenerator())
-        val result = tower.roll(input)
-        return result.prettyPrint()
-    }
-
 }
+
 class RealRng : Rng {
     override fun next(lowerBoundInclusive: Int, upperBoundInclusive: Int): Int {
         return (lowerBoundInclusive..upperBoundInclusive).shuffled().first()
@@ -95,4 +52,26 @@ class BaseViewModel : ViewModel() {
     val currentInput: MutableLiveData<String> by lazy {
         MutableLiveData<String>("")
     }
+}
+
+class MyPagerAdapter : PagerAdapter() {
+
+  override fun isViewFromObject(view: View, `object`: Any): Boolean {
+    return view == `object`
+  }
+
+  override fun getCount(): Int {
+    return 2
+  }
+
+  override fun instantiateItem(container: ViewGroup, position: Int): Any {
+    val view: View = when(position) {
+      0 -> { BasicDieScreen(container.context)}
+      1 -> { AdvancedDieScreen(container.context) }
+      else -> {View(container.context)}
+    }
+    container.addView(view)
+    return view
+  }
+
 }

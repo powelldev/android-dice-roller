@@ -1,9 +1,14 @@
 package com.fireminder.androiddiceroller.robots
 
+import android.view.View
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
+import org.hamcrest.Description
+import org.hamcrest.Matcher
+import org.hamcrest.TypeSafeMatcher
+import org.hamcrest.core.AllOf.allOf
 
 interface BasicDiceBagRobot {
 
@@ -20,43 +25,62 @@ interface BasicDiceBagRobot {
 }
 
 class BasicDiceBagRobotImpl: BasicDiceBagRobot {
+
+    // On a ViewPager, both the basic and advanced die bags are in the view hierarchy. THis
+    // is necessary to deduplicate which ViewPage we're currently on.
+    fun withIndex(matcher: Matcher<View>, index: Int): Matcher<View> {
+        return object : TypeSafeMatcher<View>() {
+            internal var currentIndex = 0
+
+            override fun describeTo(description: Description) {
+                description.appendText("with index: ")
+                description.appendValue(index)
+                matcher.describeTo(description)
+            }
+
+            public override fun matchesSafely(view: View): Boolean {
+                return matcher.matches(view) && currentIndex++ == index
+            }
+        }
+    }
+
     override fun die(die: String): BasicDiceBagRobot {
-        onView(withText(die)).perform(click())
+        onView(withIndex(withText(die), 0)).perform(click())
         return this
     }
 
     override fun number(number: Int): BasicDiceBagRobot {
-        onView(withText(number.toString())).perform(click())
+        onView(withIndex(withText(number.toString()), 0)).perform(click())
         return this
     }
 
     override fun plus(): BasicDiceBagRobot {
-        onView(withContentDescription("plus")).perform(click())
+        onView(withIndex(withContentDescription("plus"), 0)).perform(click())
         return this
     }
 
     override fun minus(): BasicDiceBagRobot {
-        onView(withContentDescription("minus")).perform(click())
+        onView(withIndex(withContentDescription("minus"), 0)).perform(click())
         return this
     }
 
     override fun clear(): BasicDiceBagRobot {
-        onView(withContentDescription("clear")).perform(click())
+        onView(withIndex(withContentDescription("clear"), 0)).perform(click())
         return this
     }
 
     override fun roll(): RollResultRobot {
-        onView(withContentDescription("roll")).perform(click())
+        onView(withIndex(withContentDescription("roll"), 0)).perform(click())
         return RollResultRobotImpl()
     }
 
     override fun saveFavorite(): BasicDiceBagRobot {
-        onView(withContentDescription("favorite")).perform(click())
+        onView(withIndex(withContentDescription("favorite"), 0)).perform(click())
         TODO()
     }
 
     override fun checkInputMatches(input: String): BasicDiceBagRobot {
-        onView(withText(input)).check(matches(isDisplayed()))
+        onView(withIndex(withText(input), 0)).perform(click())
         return this
     }
 }
