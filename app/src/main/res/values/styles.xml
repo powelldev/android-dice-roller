@@ -6,9 +6,17 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:colorBackground">@color/DarkSlateGray</item>
     </style>
 
     <style name="DiceButton" parent="TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+        <item name="android:textColor">@color/LightGrey</item>
       <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="NumberPadButton" parent="TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+        <item name="android:textColor">@color/LightGrey</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 </resources>
