@@ -9,11 +9,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 
-  <com.fireminder.androiddiceroller.ui.BasicNumberPadView
+  <com.fireminder.androiddiceroller.ui.basic.BasicNumberPadView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 
-  <com.fireminder.androiddiceroller.ui.BasicDieBagView
+  <com.fireminder.androiddiceroller.ui.basic.BasicDieBagView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 

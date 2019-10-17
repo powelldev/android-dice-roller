@@ -43,4 +43,9 @@
   <string name="explode">explode</string>
   <string name="countFailures">f</string>
   <string name="compound">compound</string>
+  <string name="dice">Dice</string>
+  <string name="category">Category</string>
+  <string name="title">Title</string>
+  <string name="save">Save</string>
+  <string name="close">Close</string>
 </resources>

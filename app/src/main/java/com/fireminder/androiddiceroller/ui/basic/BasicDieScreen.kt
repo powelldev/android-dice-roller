@@ -1,4 +1,4 @@
-package com.fireminder.androiddiceroller.ui
+package com.fireminder.androiddiceroller.ui.basic
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -15,6 +15,10 @@ import com.fireminder.androiddiceroller.implementations.BaseEvaluator
 import com.fireminder.androiddiceroller.implementations.BaseParser
 import com.fireminder.androiddiceroller.implementations.BaseResultGenerator
 import com.fireminder.androiddiceroller.implementations.BaseTower
+import com.fireminder.androiddiceroller.ui.BaseActivity
+import com.fireminder.androiddiceroller.ui.BaseViewModel
+import com.fireminder.androiddiceroller.ui.ClearRollFavoriteActionsView
+import com.fireminder.androiddiceroller.ui.RealRng
 import kotlinx.android.synthetic.main.fragment_basic_die.view.*
 
 class BasicDieScreen @JvmOverloads constructor(

@@ -14,7 +14,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     />
 
-  <com.fireminder.androiddiceroller.ui.AdvancedDieBagView
+  <com.fireminder.androiddiceroller.ui.advanced.AdvancedDieBagView
     android:id="@+id/die_bag_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     />
 
-  <com.fireminder.androiddiceroller.ui.AdvancedNumberPadView
+  <com.fireminder.androiddiceroller.ui.advanced.AdvancedNumberPadView
     android:id="@+id/num_pad_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

@@ -1,20 +1,14 @@
-package com.fireminder.androiddiceroller.ui
+package com.fireminder.androiddiceroller.ui.advanced
 
 import android.content.BroadcastReceiver
 import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
 import android.util.AttributeSet
 import android.widget.FrameLayout
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.fireminder.androiddiceroller.R
-import com.fireminder.androiddiceroller.implementations.BaseEvaluator
-import com.fireminder.androiddiceroller.implementations.BaseParser
-import com.fireminder.androiddiceroller.implementations.BaseResultGenerator
-import com.fireminder.androiddiceroller.implementations.BaseTower
+import com.fireminder.androiddiceroller.ui.BaseViewModel
 import kotlinx.android.synthetic.main.fragment_basic_die.view.*
 
 class AdvancedDieScreen @JvmOverloads constructor(

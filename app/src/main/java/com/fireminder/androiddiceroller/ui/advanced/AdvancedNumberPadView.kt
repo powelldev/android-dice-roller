@@ -1,4 +1,4 @@
-package com.fireminder.androiddiceroller.ui
+package com.fireminder.androiddiceroller.ui.advanced
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
 import com.fireminder.androiddiceroller.R
+import com.fireminder.androiddiceroller.ui.BaseActivity
 
 class AdvancedNumberPadView @JvmOverloads constructor(
   context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

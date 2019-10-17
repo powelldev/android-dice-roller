@@ -1,28 +1,17 @@
 package com.fireminder.androiddiceroller.ui
 
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.Intent.EXTRA_KEY_EVENT
-import android.content.IntentFilter
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProviders
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.fireminder.androiddiceroller.R
-import com.fireminder.androiddiceroller.implementations.BaseEvaluator
-import com.fireminder.androiddiceroller.implementations.BaseParser
-import com.fireminder.androiddiceroller.implementations.BaseResultGenerator
-import com.fireminder.androiddiceroller.implementations.BaseTower
 import com.fireminder.androiddiceroller.interfaces.Rng
-import kotlinx.android.synthetic.main.activity_base.*
+import com.fireminder.androiddiceroller.ui.advanced.AdvancedDieScreen
+import com.fireminder.androiddiceroller.ui.basic.BasicDieScreen
 
 class BaseActivity : AppCompatActivity() {
 
@@ -66,8 +55,12 @@ class MyPagerAdapter : PagerAdapter() {
 
   override fun instantiateItem(container: ViewGroup, position: Int): Any {
     val view: View = when(position) {
-      0 -> { BasicDieScreen(container.context)}
-      1 -> { AdvancedDieScreen(container.context) }
+      0 -> {
+        BasicDieScreen(container.context)
+      }
+      1 -> {
+        AdvancedDieScreen(container.context)
+      }
       else -> {View(container.context)}
     }
     container.addView(view)
