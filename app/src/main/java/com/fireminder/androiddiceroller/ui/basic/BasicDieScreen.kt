@@ -5,7 +5,9 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.widget.FrameLayout
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -19,6 +21,7 @@ import com.fireminder.androiddiceroller.ui.BaseActivity
 import com.fireminder.androiddiceroller.ui.BaseViewModel
 import com.fireminder.androiddiceroller.ui.ClearRollFavoriteActionsView
 import com.fireminder.androiddiceroller.ui.RealRng
+import com.fireminder.androiddiceroller.interfaces.Result
 import kotlinx.android.synthetic.main.fragment_basic_die.view.*
 
 class BasicDieScreen @JvmOverloads constructor(
@@ -54,11 +57,7 @@ class BasicDieScreen @JvmOverloads constructor(
             ClearRollFavoriteActionsView.DiceBagAction.Favorite.action -> {
             }
             ClearRollFavoriteActionsView.DiceBagAction.Roll.action -> {
-              val dialog = AlertDialog.Builder(context as AppCompatActivity)
-                .setTitle("roll result")
-                .setMessage(evaluate(model.currentInput.value!!))
-                .create()
-                .show()
+              launchDialog(model)
             }
 
           }
@@ -75,10 +74,20 @@ class BasicDieScreen @JvmOverloads constructor(
     context.registerReceiver(receiver, filter)
   }
 
-  private fun evaluate(input: String): String {
+  private fun launchDialog(model: BaseViewModel) {
+    val inflater = LayoutInflater.from(context)
+    val dialog = inflater.inflate(R.layout.dialog_result, null)
+    val result = evaluate(model.currentInput.value!!)
+    dialog.findViewById<TextView>(R.id.value_text).text = result.score().toString()
+    dialog.findViewById<TextView>(R.id.result_text).text = result.prettyPrint()
+    AlertDialog.Builder(context as AppCompatActivity)
+      .setView(dialog)
+      .show()
+  }
+
+  private fun evaluate(input: String): Result {
     val tower = BaseTower(BaseParser(), BaseEvaluator(RealRng()), RealRng(), BaseResultGenerator())
-    val result = tower.roll(input)
-    return result.prettyPrint()
+    return tower.roll(input)
   }
 
   override fun onDetachedFromWindow() {
