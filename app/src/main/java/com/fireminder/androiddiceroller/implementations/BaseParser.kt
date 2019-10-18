@@ -41,27 +41,34 @@ class BaseParser : Parser {
         if (hasNext() && peek("DL")) {
             consume()
             consume()
-            return FilterOperation(die as RollOperationNode, Operator.DROP_LOWEST, NumberNode(number()))
+            return assumeOneIfNoArgumentForFilter(die, Operator.DROP_LOWEST)
         }
 
         if (hasNext() && peek("DH")) {
             consume()
             consume()
-            return FilterOperation(die as RollOperationNode, Operator.DROP_HIGHEST, NumberNode(number()))
+            return assumeOneIfNoArgumentForFilter(die, Operator.DROP_HIGHEST)
         }
 
         if (hasNext() && peek("KL")) {
             consume()
             consume()
-            return FilterOperation(die as RollOperationNode, Operator.KEEP_LOWEST, NumberNode(number()))
+            return assumeOneIfNoArgumentForFilter(die, Operator.KEEP_LOWEST)
         }
 
         if (hasNext() && peek("KH")) {
             consume()
             consume()
-            return FilterOperation(die as RollOperationNode, Operator.KEEP_HIGHEST, NumberNode(number()))
+            return assumeOneIfNoArgumentForFilter(die, Operator.KEEP_HIGHEST)
         }
         return die
+    }
+
+    private fun assumeOneIfNoArgumentForFilter(die: AstNode, operator: Operator): FilterOperation {
+        if (!hasNext()) {
+            return FilterOperation(die as RollOperationNode, operator, NumberNode(1))
+        }
+        return FilterOperation(die as RollOperationNode, operator, NumberNode(number()))
     }
 
     /*
@@ -115,4 +122,5 @@ class BaseParser : Parser {
         assert(current() == character)
         index++
     }
+
 }

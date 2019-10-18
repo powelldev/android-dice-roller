@@ -6,6 +6,7 @@
         android:layout_height="match_parent">
 
   <TextView
+    style="@style/FormulaTextStyle"
     android:id="@+id/formula_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -14,28 +15,32 @@
     app:layout_constraintEnd_toEndOf="parent"
     />
 
-  <com.fireminder.androiddiceroller.ui.BasicDieBagView
-    android:id="@+id/die_bag_view"
+  <com.fireminder.androiddiceroller.ui.ClearRollFavoriteActionsView
+    android:id="@+id/clear_roll_favorite_action_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/formula_text"
+    app:layout_constraintVertical_bias="1"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     />
 
-  <com.fireminder.androiddiceroller.ui.BasicNumberPadView
+  <com.fireminder.androiddiceroller.ui.basic.BasicNumberPadView
     android:id="@+id/num_pad_view"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/die_bag_view"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toBottomOf="@+id/die_bag_view"
+    app:layout_constraintBottom_toTopOf="@id/clear_roll_favorite_action_view"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     />
 
-  <com.fireminder.androiddiceroller.ui.ClearRollFavoriteActionsView
+  <com.fireminder.androiddiceroller.ui.basic.BasicDieBagView
+    android:id="@+id/die_bag_view"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/num_pad_view"
+    android:layout_height="0dp"
+    app:layout_constraintVertical_bias="0"
+    app:layout_constraintTop_toBottomOf="@id/formula_text"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     />

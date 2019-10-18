@@ -12,8 +12,8 @@
     <string name="nine">9</string>
     <string name="zero">0</string>
 
-    <string name="plus">plus</string>
-    <string name="minus">minus</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
 
     <string name="favorite">favorite</string>
     <string name="roll">roll</string>
@@ -30,15 +30,25 @@
     <string name="dN">dN</string>
   <string name="d2">d2</string>
     <string name="dF">dF</string>
-    <string name="keep">keep</string>
-    <string name="keepHigh">keepHigh</string>
-  <string name="dropHigh">dropHigh</string>
     <string name="reroll">reroll</string>
     <string name="penetrate">penetrate</string>
     <string name="greaterThan"><![CDATA[>]]></string>
     <string name="lessThan"><![CDATA[<]]></string>
-  <string name="keepLow">keepLow</string>
-  <string name="dropLow">dropLow</string>
+
+  <string name="keep">keep</string>
+
+  <string name="keepHigh">KH</string>
+  <string name="keepHighDescription">Keep highest</string>
+
+  <string name="dropHigh">DH</string>
+  <string name="dropHighDescription">Drop highest</string>
+
+  <string name="keepLow">KL</string>
+  <string name="keepLowDescription">Keep lowest</string>
+
+  <string name="dropLow">DL</string>
+  <string name="dropLowDescription">Drop Lowest</string>
+
   <string name="rerollOnce">rerollOnce</string>
   <string name="explode">explode</string>
   <string name="countFailures">f</string>

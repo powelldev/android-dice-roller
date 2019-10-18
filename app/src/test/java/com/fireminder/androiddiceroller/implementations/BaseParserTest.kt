@@ -88,5 +88,40 @@ class BaseParserTest {
         assertEquals(Operator.DROP_LOWEST, node.filterOperator())
         assertEquals(1, (node.filterArgument() as NumberNode).number)
     }
+
+    @Test
+    fun processMissingOne_dropLow() {
+        val node = BaseParser().parse("4d6DL") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.DROP_LOWEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun processMissingOne_dropHigh() {
+        val node = BaseParser().parse("4d6DH") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.DROP_HIGHEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
+    }
+    @Test
+    fun processMissingOne_keepHigh() {
+        val node = BaseParser().parse("4d6KH") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_HIGHEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun processMissingOne_keepLow() {
+        val node = BaseParser().parse("4d6KL") as FilterOperation
+        assertEquals(6, node.rollOperation().dieSides())
+        assertEquals(4, node.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_LOWEST, node.filterOperator())
+        assertEquals(1, (node.filterArgument() as NumberNode).number)
+    }
 }
 

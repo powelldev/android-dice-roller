@@ -20,7 +20,6 @@ class BasicDieBagView @JvmOverloads constructor(
     private val d8: View
     private val d6: View
     private val d4: View
-    private val d3: View
     private val dN: View
 
     init {
@@ -32,7 +31,6 @@ class BasicDieBagView @JvmOverloads constructor(
         d8 = findViewById(R.id.d8)
         d6 = findViewById(R.id.d6)
         d4 = findViewById(R.id.d4)
-        d3 = findViewById(R.id.d3)
         dN = findViewById(R.id.dN)
 
         d100.setOnClickListener {
@@ -55,9 +53,6 @@ class BasicDieBagView @JvmOverloads constructor(
         }
         d4.setOnClickListener {
             notify("d4")
-        }
-        d3.setOnClickListener {
-            notify("d3")
         }
         dN.setOnClickListener {
             notify("d")

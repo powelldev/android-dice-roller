@@ -11,12 +11,21 @@
     </style>
 
     <style name="DiceButton" parent="TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-        <item name="android:textColor">@color/LightGrey</item>
+      <item name="android:textColor">@color/LightGrey</item>
+      <item name="android:textSize">@dimen/text_size_normal</item>
       <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
     <style name="NumberPadButton" parent="TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
         <item name="android:textColor">@color/LightGrey</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
         <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
+
+    <style name="FormulaTextStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/LightGrey</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <dimen name="text_size_normal">24sp</dimen>
 </resources>

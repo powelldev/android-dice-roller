@@ -12,6 +12,7 @@ import com.fireminder.androiddiceroller.R
 import com.fireminder.androiddiceroller.interfaces.Rng
 import com.fireminder.androiddiceroller.ui.advanced.AdvancedDieScreen
 import com.fireminder.androiddiceroller.ui.basic.BasicDieScreen
+import com.google.android.material.tabs.TabLayout
 
 class BaseActivity : AppCompatActivity() {
 
@@ -20,14 +21,17 @@ class BaseActivity : AppCompatActivity() {
     }
 
   private lateinit var viewPager: ViewPager
+  private lateinit var tabLayout: TabLayout
   private lateinit var adapter: MyPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
       setContentView(R.layout.activity_base)
       viewPager = findViewById(R.id.viewPager)
+      tabLayout = findViewById(R.id.tabLayout)
       adapter = MyPagerAdapter()
       viewPager.adapter = adapter
+      tabLayout.setupWithViewPager(viewPager)
     }
 }
 
@@ -51,6 +55,14 @@ class MyPagerAdapter : PagerAdapter() {
 
   override fun getCount(): Int {
     return 2
+  }
+
+  override fun getPageTitle(position: Int): CharSequence? {
+    return when (position) {
+      0 -> "Basic"
+      1 -> "Advanced"
+      else -> ""
+    }
   }
 
   override fun instantiateItem(container: ViewGroup, position: Int): Any {
