@@ -6,6 +6,13 @@ import com.fireminder.androiddiceroller.interfaces.DieRollHolder
 import com.fireminder.androiddiceroller.interfaces.Result
 
 class RollOperationNode(private val numberOfRolls: Int, private val dieSides: Int): AstNode(), DieRollHolder {
+
+    override fun clone(): AstNode {
+        return RollOperationNode(numberOfRolls, dieSides).apply {
+          results.forEach { addRoll(it) }
+        }
+    }
+
     override fun prettyPrint(): String {
         return rolls().toString()
     }

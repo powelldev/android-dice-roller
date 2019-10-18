@@ -58,4 +58,6 @@
   <string name="title">Title</string>
   <string name="save">Save</string>
   <string name="close">Close</string>
+  <string name="repeat"><i>x</i> : <i>y</i></string>
+  <string name="repeatDescription">Repeat roll</string>
 </resources>

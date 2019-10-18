@@ -197,6 +197,17 @@
   </TableRow>
 
   <TableRow>
+    <Button
+      android:id="@+id/repeat"
+      style="@style/DiceButton"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:contentDescription="@string/repeatDescription"
+      android:text="@string/repeat" />
+  </TableRow>
+
+  <TableRow>
   <Button
     android:id="@+id/keepLow"
     style="@style/DiceButton"

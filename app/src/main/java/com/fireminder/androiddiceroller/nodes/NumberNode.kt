@@ -5,6 +5,10 @@ import com.fireminder.androiddiceroller.interfaces.AstVisitor
 import com.fireminder.androiddiceroller.interfaces.Result
 
 class NumberNode(val number: Int) : AstNode() {
+    override fun clone(): AstNode {
+      return NumberNode(number)
+    }
+
     override fun prettyPrint(): String {
         return number.toString()
     }

@@ -123,5 +123,45 @@ class BaseParserTest {
         assertEquals(Operator.KEEP_LOWEST, node.filterOperator())
         assertEquals(1, (node.filterArgument() as NumberNode).number)
     }
+
+    @Test
+    fun filterAndThenAdd() {
+        val node = BaseParser().parse("4d6KL1+1") as BinaryOperation
+        assertEquals(Operator.ADDITION, node.operator())
+        assertEquals(1, (node.right() as NumberNode).number)
+
+        val filterOp = node.left() as FilterOperation
+        assertEquals(6, filterOp.rollOperation().dieSides())
+        assertEquals(4, filterOp.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_LOWEST, filterOp.filterOperator())
+        assertEquals(1, (filterOp.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun repeatOperation() {
+        val node = BaseParser().parse("6:4d6DL") as RepeatOperation
+        assertEquals(6, (node.repeatTimes() as NumberNode).number)
+
+        val filterOp = node.repeatedNode() as FilterOperation
+        assertEquals(4, filterOp.rollOperation().numberOfRolls())
+        assertEquals(6, filterOp.rollOperation().dieSides())
+        assertEquals(Operator.DROP_LOWEST, filterOp.filterOperator())
+        assertEquals(1, (filterOp.filterArgument() as NumberNode).number)
+    }
+
+    @Test
+    fun filterAndThenAdd_withMissingOneAfterFilter() {
+        val node = BaseParser().parse("4d6KL+1") as BinaryOperation
+
+        assertEquals(Operator.ADDITION, node.operator())
+        assertEquals(1, (node.right() as NumberNode).number)
+
+        val filterOp = node.left() as FilterOperation
+        assertEquals(6, filterOp.rollOperation().dieSides())
+        assertEquals(4, filterOp.rollOperation().numberOfRolls())
+        assertEquals(Operator.KEEP_LOWEST, filterOp.filterOperator())
+        assertEquals(1, (filterOp.filterArgument() as NumberNode).number)
+    }
+
 }
 

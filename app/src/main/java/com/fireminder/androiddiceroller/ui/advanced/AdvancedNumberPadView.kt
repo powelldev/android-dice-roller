@@ -28,6 +28,10 @@ class AdvancedNumberPadView @JvmOverloads constructor(
 
   private val keepHigh: View
   private val dropHigh: View
+  private val keepLow: View
+  private val dropLow: View
+
+  private val repeat: View
   /*
   private val reroll: View
   private val compound: View
@@ -35,8 +39,6 @@ class AdvancedNumberPadView @JvmOverloads constructor(
   private val lessThan: View
    */
 
-  private val keepLow: View
-  private val dropLow: View
   /*
   private val rerollOnce: View
   private val explode: View
@@ -93,6 +95,9 @@ class AdvancedNumberPadView @JvmOverloads constructor(
 
     dropHigh = findViewById(R.id.dropHigh)
     dropHigh.setOnClickListener { notify("DH") }
+
+    repeat = findViewById(R.id.repeat)
+    repeat.setOnClickListener { notify(":") }
 
   }
 

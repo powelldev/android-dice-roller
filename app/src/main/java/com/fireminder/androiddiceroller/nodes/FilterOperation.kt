@@ -8,13 +8,18 @@ class FilterOperation(
     private val rollOperationNode: RollOperationNode,
     private val filterOperator: Operator,
     private val filterArgument: NumberNode) : AstNode() {
+    override fun clone(): AstNode {
+      return FilterOperation(rollOperationNode.clone() as RollOperationNode, filterOperator, filterArgument.clone() as NumberNode).apply {
+          setRolls(keptRolls, droppedRolls)
+      }
+    }
 
     override fun prettyPrint(): String {
         return "$keptRolls dropped:$droppedRolls"
     }
 
-    private lateinit var keptRolls: List<Int>
-    private lateinit var droppedRolls: List<Int>
+    private var keptRolls: List<Int> = emptyList()
+    private var droppedRolls: List<Int> = emptyList()
 
     fun rollOperation(): RollOperationNode = rollOperationNode
 

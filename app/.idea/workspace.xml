@@ -11,46 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f116298-e49e-4770-bf3a-6c18f02653f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_migration_2_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_2_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_testing_2_2_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_3_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_ktx_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_ktx_2_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_31_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_50_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_31_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_50_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_3_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_common_1_1_1_jar.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RepeatOperation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseEvaluator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseEvaluator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedDieBagView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/basic/BasicDieBagView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/basic/BasicDieBagView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/advanced_die_bag.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResultGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResultGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstVisitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstVisitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/FilterOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/FilterOperation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/NumberNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/NumberNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedNumberPadView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedNumberPadView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/basic_die_bag.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/clear_roll_favorite_actions_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_basic_die.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_basic_die.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,52 +51,15 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-              <folding>
-                <element signature="e#45#620#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/basic/BasicDieScreen.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-              <folding>
-                <element signature="e#51#1170#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseTower.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -133,29 +71,84 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="916">
+              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/FilterOperation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+            <state relative-caret-position="323">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResultGenerator.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
+            <state relative-caret-position="272">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="206" column="30" selection-start-line="206" selection-start-column="30" selection-end-line="206" selection-end-column="30" />
+              <folding>
+                <element signature="e#6308#6335#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RepeatOperation.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding>
+                <element signature="e#48#226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/Result.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResult.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#58#174#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,14 +203,26 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_basic_die.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/basic_number_pad.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt" />
         <option value="$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstVisitor.kt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseEvaluator.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstNode.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/NumberNode.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedNumberPadView.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/FilterOperation.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResultGenerator.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RepeatOperation.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
     <option name="y" value="1" />
     <option name="width" value="2384" />
@@ -281,6 +286,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
+              <item name="implementations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
               <item name="nodes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,20 +314,7 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
@@ -311,6 +323,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
@@ -346,6 +359,16 @@
               <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
               <item name="implementations" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android-dice-roller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="androiddiceroller" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -358,6 +381,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-10-17T22:46:04.963Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../android/android_sdk" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -384,7 +408,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Android App.app">
-    <configuration name="BaseParserTest (1)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseEvaluatorTest (1)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -393,14 +417,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fireminder.androiddiceroller.implementations" />
-      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseParserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseEvaluatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseParserTest (2)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseEvaluatorTest (3)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -409,14 +433,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fireminder.androiddiceroller.implementations" />
-      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseParserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseEvaluatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseParserTest (3)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseEvaluatorTest (4)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -425,14 +449,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fireminder.androiddiceroller.implementations" />
-      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseParserTest" />
+      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseEvaluatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseParserTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseEvaluatorTest.repeatOperation" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -441,24 +465,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fireminder.androiddiceroller.implementations" />
-      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseParserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseParserTest.filterDropLowest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fireminder.androiddiceroller.implementations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fireminder.androiddiceroller.implementations" />
-      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseParserTest" />
-      <option name="METHOD_NAME" value="filterDropLowest" />
+      <option name="MAIN_CLASS_NAME" value="com.fireminder.androiddiceroller.implementations.BaseEvaluatorTest" />
+      <option name="METHOD_NAME" value="repeatOperation" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -468,6 +476,15 @@
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -527,11 +544,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.BaseParserTest (3)" />
-        <item itemvalue="Android JUnit.BaseParserTest (2)" />
-        <item itemvalue="Android JUnit.BaseParserTest (1)" />
-        <item itemvalue="Android JUnit.BaseParserTest.filterDropLowest" />
-        <item itemvalue="Android JUnit.BaseParserTest" />
+        <item itemvalue="Android JUnit.java in app" />
+        <item itemvalue="Android JUnit.BaseEvaluatorTest (4)" />
+        <item itemvalue="Android JUnit.BaseEvaluatorTest (3)" />
+        <item itemvalue="Android JUnit.BaseEvaluatorTest.repeatOperation" />
+        <item itemvalue="Android JUnit.BaseEvaluatorTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -549,43 +566,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseParserTest_processMissing1 - 2019.10.17 at 16h 51m 11s.xml">
-      <configuration name="BaseParserTest.processMissing1" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest - 2019.10.17 at 16h 51m 22s.xml">
-      <configuration name="BaseParserTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest_filterDropLowest - 2019.10.17 at 16h 53m 21s.xml">
-      <configuration name="BaseParserTest.filterDropLowest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest_filterDropLowest - 2019.10.17 at 16h 54m 27s.xml">
-      <configuration name="BaseParserTest.filterDropLowest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest_filterDropLowest - 2019.10.17 at 16h 54m 57s.xml">
-      <configuration name="BaseParserTest.filterDropLowest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest_filterDropLowest - 2019.10.17 at 16h 56m 11s.xml">
-      <configuration name="BaseParserTest.filterDropLowest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="BaseParserTest_(1) - 2019.10.17 at 16h 56m 15s.xml">
+    <history-entry file="BaseParserTest_(1) - 2019.10.17 at 17h 41m 53s.xml">
       <configuration name="BaseParserTest (1)" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="BaseParserTest_(1) - 2019.10.17 at 16h 58m 27s.xml">
-      <configuration name="BaseParserTest (1)" configurationId="AndroidJUnit" />
+    <history-entry file="BaseEvaluatorTest_(2) - 2019.10.17 at 17h 42m 03s.xml">
+      <configuration name="BaseEvaluatorTest (2)" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="BaseParserTest_(2) - 2019.10.17 at 16h 59m 57s.xml">
-      <configuration name="BaseParserTest (2)" configurationId="AndroidJUnit" />
+    <history-entry file="BaseEvaluatorTest - 2019.10.17 at 18h 07m 23s.xml">
+      <configuration name="BaseEvaluatorTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="BaseParserTest_(3) - 2019.10.17 at 17h 00m 34s.xml">
-      <configuration name="BaseParserTest (3)" configurationId="AndroidJUnit" />
+    <history-entry file="BaseEvaluatorTest_(1) - 2019.10.17 at 18h 10m 24s.xml">
+      <configuration name="BaseEvaluatorTest (1)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="BaseEvaluatorTest_repeatOperation - 2019.10.17 at 18h 12m 11s.xml">
+      <configuration name="BaseEvaluatorTest.repeatOperation" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="BaseEvaluatorTest_(3) - 2019.10.17 at 18h 13m 49s.xml">
+      <configuration name="BaseEvaluatorTest (3)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="BaseEvaluatorTest_(4) - 2019.10.17 at 18h 20m 30s.xml">
+      <configuration name="BaseEvaluatorTest (4)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="BaseEvaluatorTest_(4) - 2019.10.17 at 18h 20m 33s.xml">
+      <configuration name="BaseEvaluatorTest (4)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="java_in_app - 2019.10.17 at 18h 21m 17s.xml">
+      <configuration name="java in app" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="java_in_app - 2019.10.17 at 18h 21m 41s.xml">
+      <configuration name="java in app" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="1" width="2384" height="1406" extended-state="0" />
+    <frame x="-7" y="1" width="2384" height="1406" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1166093" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1166093" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -593,16 +610,16 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.82917386" visible="true" weight="0.32914376" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.8287435" weight="0.32914376" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.7379518" weight="0.32914376" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49913943" weight="0.32914376" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.17082617" side_tool="true" visible="true" weight="0.32914376" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5021515" side_tool="true" weight="0.34485468" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4982079" weight="0.34536892" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49784854" weight="0.34485468" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32967034" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.4995697" weight="0.32914376" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -610,6 +627,33 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" weight="0.23709123" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1166093" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.8287435" weight="0.32914376" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.7379518" weight="0.32914376" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49913943" weight="0.32914376" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5021515" side_tool="true" visible="true" weight="0.34485468" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49784854" visible="true" weight="0.34485468" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.4995697" weight="0.32914376" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.23709123" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,12 +663,6 @@
           <line>47</line>
           <properties />
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -649,82 +687,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0-alpha05/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-alpha05-sources.jar!/androidx/lifecycle/ViewModelProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/MainActivity.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/PagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/RollOperationNodeTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/DiceNotationIntegrationTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-core/3.2.0/5d1b7f5b3c2877929324f5c846da358995c9af6d/espresso-core-3.2.0-sources.jar!/androidx/test/espresso/matcher/ViewMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="418" column="30" selection-start-line="418" selection-start-column="30" selection-end-line="418" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/robots/BasicDiceBagRobot.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/BasicDiceBagTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/androidTest/java/com/fireminder/androiddiceroller/robots/AdvancedDiceBagRobot.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -887,52 +849,10 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedNumberPadView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_basic_die.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
-          <folding>
-            <element signature="e#219#235#0" expanded="true" />
-            <element signature="e#257#273#0" expanded="true" />
-            <element signature="e#6277#6305#0" expanded="true" />
-            <element signature="e#6323#6340#0" expanded="true" />
-            <element signature="e#6511#6539#0" expanded="true" />
-            <element signature="e#6557#6574#0" expanded="true" />
-            <element signature="e#6761#6790#0" expanded="true" />
-            <element signature="e#6808#6826#0" expanded="true" />
-            <element signature="e#7014#7043#0" expanded="true" />
-            <element signature="e#7061#7079#0" expanded="true" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
@@ -955,23 +875,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseTower.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-          <folding>
-            <element signature="e#45#620#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -985,10 +892,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseTower.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/BaseActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="531">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+          <folding>
+            <element signature="e#45#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstVisitor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="3233" column="19" selection-start-line="3233" selection-start-column="19" selection-end-line="3233" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/fakes/FakeRng.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseEvaluator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="e#58#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/AstNode.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RollOperationNode.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/NumberNode.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/DiceNotationIntegrationTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/RollOperationNodeTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/BinaryOperation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/ui/advanced/AdvancedNumberPadView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="95" column="37" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="140" column="18" lean-forward="true" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.50/8ac406cf33e942265c4abb33ee0acdee79292dd6/kotlin-stdlib-common-1.3.50-sources.jar!/generated/_Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="1531" column="23" lean-forward="true" selection-start-line="1531" selection-start-column="23" selection-end-line="1531" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/advanced_number_pad.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="206" column="30" selection-start-line="206" selection-start-column="30" selection-end-line="206" selection-end-column="30" />
+          <folding>
+            <element signature="e#6308#6335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResultGenerator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/FilterOperation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -999,24 +1049,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseParser.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_advanced_die.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
+        <state relative-caret-position="459">
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/nodes/RepeatOperation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="e#48#226#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseParserTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/interfaces/Result.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="105" column="41" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/fireminder/androiddiceroller/implementations/BaseEvaluatorTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fireminder/androiddiceroller/implementations/BaseResult.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#58#174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

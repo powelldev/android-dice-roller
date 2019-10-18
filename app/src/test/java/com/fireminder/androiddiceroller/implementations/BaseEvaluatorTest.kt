@@ -103,4 +103,18 @@ class BaseEvaluatorTest {
 
         assertEquals(2, node.result().score())
     }
+
+    @Test
+    fun repeatOperation() {
+        val evaluator = BaseEvaluator(FakeRng())
+        // Roll 6: 1d6 (1d6 repeated six times.)
+        val rollOp = RollOperationNode(1, 6)
+        val node = RepeatOperation(
+          repeatTimes = NumberNode(6),
+          repeatedNode = rollOp)
+
+        evaluator.evaluate(node)
+
+        assertEquals(1 + 2 + 3 + 4 + 5 + 6, node.result().score())
+    }
 }

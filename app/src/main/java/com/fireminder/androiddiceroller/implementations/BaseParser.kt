@@ -9,12 +9,25 @@ class BaseParser : Parser {
     private lateinit var expression: String
 
     /*
-    expression -> addition
+    expression -> repeat
      */
     override fun parse(expression: String): AstNode {
         index = 0
         this.expression = expression
-        return addition()
+        return repeat()
+    }
+
+    /*
+    repeat -> addition [: addition]
+     */
+    private fun repeat(): AstNode {
+      val repeatCount = addition()
+      if (hasNext()) {
+          expectAndConsume(':')
+          val repeatOperation = addition()
+          return RepeatOperation(repeatCount, repeatOperation)
+      }
+      return repeatCount
     }
 
     /*
@@ -22,16 +35,17 @@ class BaseParser : Parser {
      */
     private fun addition(): AstNode {
         val left = filterOp()
-        if (hasNext()) {
-            val operator  = when (current()) {
-                '+' -> Operator.ADDITION
-                '-' -> Operator.SUBTRACTION
-                else -> TODO()
-            }
+        if (hasNext() && current() == '+') {
             consume()
             val right = filterOp()
-            return BinaryOperation(operator, left, right)
+            return BinaryOperation(Operator.ADDITION, left, right)
         }
+        if (hasNext() && current() == '-') {
+            consume()
+            val right = filterOp()
+            return BinaryOperation(Operator.SUBTRACTION, left, right)
+        }
+
         return left
     }
 
@@ -64,8 +78,16 @@ class BaseParser : Parser {
         return die
     }
 
+    /**
+     * To make life easier, instead of having to type XdYKH1, allow XdYKH to default to one (1).
+     */
     private fun assumeOneIfNoArgumentForFilter(die: AstNode, operator: Operator): FilterOperation {
         if (!hasNext()) {
+            return FilterOperation(die as RollOperationNode, operator, NumberNode(1))
+        }
+        if (peekAnyOf(listOf(
+            "+",
+            "-"))) {
             return FilterOperation(die as RollOperationNode, operator, NumberNode(1))
         }
         return FilterOperation(die as RollOperationNode, operator, NumberNode(number()))
@@ -108,6 +130,13 @@ class BaseParser : Parser {
     private fun consume() {
         index++
     }
+
+  private fun peekAnyOf(possibleStrings: List<String>): Boolean {
+      possibleStrings.forEach { expected ->
+          if (peek(expected)) { return true }
+      }
+    return false
+  }
 
     private fun peek(expected: String): Boolean {
         expected.forEachIndexed { expectedIndex, c ->

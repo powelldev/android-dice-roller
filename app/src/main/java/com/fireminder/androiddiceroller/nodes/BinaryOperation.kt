@@ -7,6 +7,11 @@ class BinaryOperation(
     private val operator: Operator,
     private val left: AstNode,
     private val right: AstNode) : AstNode() {
+
+    override fun clone(): AstNode {
+      return BinaryOperation(operator, left.clone(), right.clone())
+    }
+
     override fun prettyPrint(): String {
         val sign = when(operator) {
             Operator.ADDITION -> "+"
@@ -32,4 +37,6 @@ enum class Operator {
     KEEP_HIGHEST,
     KEEP_LOWEST,
     DROP_HIGHEST,
-    DROP_LOWEST }
+    DROP_LOWEST,
+    REPEAT
+}

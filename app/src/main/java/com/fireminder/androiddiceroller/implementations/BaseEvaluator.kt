@@ -6,6 +6,16 @@ import com.fireminder.androiddiceroller.interfaces.Rng
 import com.fireminder.androiddiceroller.nodes.*
 
 class BaseEvaluator(private val rng: Rng) : Evaluator {
+    override fun visitRepeatOperationNode(repeatOperation: RepeatOperation) {
+      evaluate(repeatOperation.repeatTimes())
+      val timesToRepeat = repeatOperation.repeatTimes().result().score()
+      for (i in 1..timesToRepeat) {
+        val operation = repeatOperation.repeatedNode().clone()
+        evaluate(operation)
+        repeatOperation.addResult(operation.result())
+      }
+      repeatOperation.setResult(BaseResult(repeatOperation, repeatOperation.results().sumBy { it.score() }, ""))
+    }
 
     override fun visitFilterOperation(filterOperation: FilterOperation) {
         evaluate(filterOperation.rollOperation())
@@ -67,6 +77,7 @@ class BaseEvaluator(private val rng: Rng) : Evaluator {
         when (binaryOperation.operator()) {
             Operator.ADDITION -> binaryOperation.setResult(BaseResult(binaryOperation, leftValue + rightValue, ""))
             Operator.SUBTRACTION -> binaryOperation.setResult(BaseResult(binaryOperation, leftValue - rightValue, ""))
+            else -> TODO()
         }
     }
 

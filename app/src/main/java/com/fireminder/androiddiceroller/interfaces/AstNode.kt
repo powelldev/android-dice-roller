@@ -17,5 +17,6 @@ abstract class AstNode {
     }
 
     abstract fun prettyPrint(): String
+    abstract fun clone(): AstNode
 
 }
