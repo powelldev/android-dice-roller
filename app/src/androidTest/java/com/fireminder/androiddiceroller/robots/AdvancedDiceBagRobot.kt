@@ -5,6 +5,7 @@ import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.*
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.*
+import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import com.fireminder.androiddiceroller.R
@@ -85,12 +86,12 @@ class AdvancedDiceBagRobotImpl: AdvancedDiceBagRobot {
   }
 
   override fun plus(): AdvancedDiceBagRobot {
-    onView(withIndex(withContentDescription("plus"), 1)).perform(click())
+    onView(withIndex(withContentDescription("+"), 1)).perform(click())
     return this
   }
 
   override fun minus(): AdvancedDiceBagRobot {
-    onView(withIndex(withContentDescription("minus"), 1)).perform(click())
+    onView(withIndex(withContentDescription("-"), 1)).perform(click())
     return this
   }
 
@@ -110,7 +111,8 @@ class AdvancedDiceBagRobotImpl: AdvancedDiceBagRobot {
   }
 
   override fun checkInputMatches(input: String): AdvancedDiceBagRobot {
-    onView(withIndex(withText(input), 1)).perform(click())
+    onView(withIndex(withText(input), 1)).check(matches(isDisplayingAtLeast(1)))
+    //onView(withIndex(withText(input), 1)).perform(click())
     return this
   }
 }

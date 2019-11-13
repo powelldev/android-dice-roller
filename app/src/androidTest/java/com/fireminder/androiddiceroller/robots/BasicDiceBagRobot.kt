@@ -3,8 +3,11 @@ package com.fireminder.androiddiceroller.robots
 import android.view.View
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
+import com.fireminder.androiddiceroller.R
+import kotlinx.android.synthetic.main.fragment_basic_die.view.*
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
@@ -55,12 +58,12 @@ class BasicDiceBagRobotImpl: BasicDiceBagRobot {
     }
 
     override fun plus(): BasicDiceBagRobot {
-        onView(withIndex(withContentDescription("plus"), 0)).perform(click())
+        onView(withIndex(withContentDescription("+"), 0)).perform(click())
         return this
     }
 
     override fun minus(): BasicDiceBagRobot {
-        onView(withIndex(withContentDescription("minus"), 0)).perform(click())
+        onView(withIndex(withContentDescription("-"), 0)).perform(click())
         return this
     }
 
@@ -80,7 +83,7 @@ class BasicDiceBagRobotImpl: BasicDiceBagRobot {
     }
 
     override fun checkInputMatches(input: String): BasicDiceBagRobot {
-        onView(withIndex(withText(input), 0)).perform(click())
+        onView(withIndex(withId(R.id.formula_text), 0)).check(matches(withText(input)))
         return this
     }
 }
