@@ -81,9 +81,22 @@ class DiceNotationIntegrationTest {
 
 
     @Test
+    fun repeat() {
+        val result = FakeTower().roll("6:4d6")
+        assertEquals(84, result.score())
+    }
+
+    @Test
+    fun nestedRepeats() {
+        val result = FakeTower().roll("2:2:d4")
+        assertEquals(1+2+3+4, result.score())
+    }
+
+
+    @Test
     fun prettyPrint() {
         val result = FakeTower().roll("4d6KH3")
-        assertEquals("9:[2, 3, 4] dropped:[1]", result.prettyPrint())
+        assertEquals("9:[4, 3, 2] dropped:[1]", result.prettyPrint())
     }
 
 }

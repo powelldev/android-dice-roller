@@ -9,12 +9,18 @@ class BaseParser : Parser {
     private lateinit var expression: String
 
     /*
-    expression -> repeat
+    expression -> repeat [: repeat]
      */
     override fun parse(expression: String): AstNode {
         index = 0
         this.expression = expression
-        return repeat()
+        val head = repeat()
+        if (hasNext()) {
+            expectAndConsume(':')
+            val op = repeat()
+            return RepeatOperation(head, op)
+        }
+        return head
     }
 
     /*

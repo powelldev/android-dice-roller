@@ -14,3 +14,4 @@ open class BaseTower(
         return resultGenerator.create(node)
     }
 }
+
